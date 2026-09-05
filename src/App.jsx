@@ -83,7 +83,7 @@ const PROCESS_STEPS = [
     step: "02",
     title: "Design",
     text: "Sketch the schema, endpoints, and component structure — focusing on scalable backends and intuitive frontends.",
-    example: "Planning how databases, APIs, and client-side interfaces will communicate efficiently.",
+    example: "This means planning how databases, APIs, and client-side interfaces will communicate efficiently.",
   },
   {
     icon: Code2,
@@ -176,7 +176,7 @@ const PROJECTS = [
   {
     title: "Nutri-Vision AI Tracker",
     tag: "React · TypeScript · Supabase",
-    desc: "An intelligent nutrition dashboard that calculates personalized macro breakdowns using Edge AI.",
+    desc: "An intelligent nutrition dashboard that calculates personalized macro breakdowns using Supabase Edge Functions.",
     longDesc: "Nutri-Vision goes beyond simple calorie counting by utilizing AI algorithms deployed at the edge to analyze food inputs. It provides users with deep, visual insights into their eating habits through a highly responsive, modern dashboard.",
     bullets: [
       "Engineered a scalable nutrition-tracking web application utilizing strict TypeScript typing and Vite for rapid module reloading.",
@@ -221,7 +221,6 @@ const PROJECTS = [
 ];
 
 const CERTIFICATIONS = [
-  { title: "Core Java Programming", org: "Skill Development" },
   { title: "AWS Cloud Foundations", org: "AWS Academy" },
   { title: "AWS Cloud Architecting", org: "AWS Academy / KGTTI, Kalaburagi" },
   { title: "Full-Stack Development", org: "Simplilearn SkillUp" },
@@ -373,7 +372,7 @@ export default function PortfolioSite() {
               I'm an Artificial Intelligence and Data Science graduate (B.E., 2026) from Government Engineering College, Bidar, with hands-on experience from a cloud-native Java microservices internship at Robomanthan Pvt. Ltd., where I helped build a full-stack rural homestay booking platform from scratch — schema, APIs, auth, and the React frontend that ties it all together.
             </motion.p>
             <motion.p variants={fadeUp} className="text-slate-400 text-lg leading-relaxed mb-4">
-              Outside the internship, I keep building. That's meant a RAG-powered medical AI backend with a real vector database and LLM behind it, a nutrition tracker with an AI food-analysis pipeline, and a course material system I led a small team on.
+              Outside the internship, I keep building. That's meant a RAG-powered medical AI backend with a real vector database and LLM behind it, a nutrition tracker with an AI food-analysis pipeline, and a course material system where I led a team of four.
             </motion.p>
             <motion.p variants={fadeUp} className="text-slate-400 text-lg leading-relaxed mb-8">
               I'm currently looking for a Software Developer, Java Developer, or Full Stack role where I can keep shipping real things alongside people who've been doing this longer than I have.
@@ -545,12 +544,6 @@ export default function PortfolioSite() {
                 <div className="relative h-52 overflow-hidden bg-slate-800 flex items-center justify-center">
                   <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent" />
-                  {/* Tag pill */}
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full text-xs font-bold text-white backdrop-blur-md" style={{ background: `${p.accent}40`, border: `1px solid ${p.accent}60` }}>
-                      {p.tag}
-                    </span>
-                  </div>
                   {/* Link icon top right */}
                   <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/40 backdrop-blur flex items-center justify-center text-white group-hover:bg-indigo-600 transition-colors opacity-0 group-hover:opacity-100">
                     <ArrowUpRight size={16} />
@@ -559,6 +552,11 @@ export default function PortfolioSite() {
 
                 {/* Content */}
                 <div className="p-7 flex flex-col flex-grow">
+                  <div className="mb-4">
+                    <span className="inline-block px-3 py-1 rounded-full text-xs font-bold text-white" style={{ background: `${p.accent}40`, border: `1px solid ${p.accent}60` }}>
+                      {p.tag}
+                    </span>
+                  </div>
                   <h3 className="text-lg font-bold text-white mb-2">{p.title}</h3>
                   <p className="text-slate-400 text-sm leading-relaxed flex-grow mb-6">{p.desc}</p>
                   <span className="inline-flex items-center gap-1.5 text-sm font-bold group-hover:text-indigo-400 transition-colors text-white/70">
