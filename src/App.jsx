@@ -76,28 +76,28 @@ const PROCESS_STEPS = [
     step: "01",
     title: "Understand",
     text: "Break the requirement down and figure out the data model and API shape before writing any code.",
-    example: "For Grama-Vasathi, that meant mapping out roles before building a single endpoint.",
+    example: "This means mapping out the system architecture and business logic before building a single endpoint.",
   },
   {
     icon: SlidersHorizontal,
     step: "02",
     title: "Design",
-    text: "Sketch the schema, endpoints, and component structure — Spring Boot on the back, React on the front.",
-    example: "For Medical AI, planning how ChromaDB, the LLM, and FastAPI would talk.",
+    text: "Sketch the schema, endpoints, and component structure — focusing on scalable backends and intuitive frontends.",
+    example: "Planning how databases, APIs, and client-side interfaces will communicate efficiently.",
   },
   {
     icon: Code2,
     step: "03",
     title: "Build",
-    text: "Write the backend logic, wire up the frontend, and test the flow end-to-end as I go.",
-    example: "Build one REST endpoint, test it, then connect the matching React screen.",
+    text: "Write the backend logic, wire up the frontend, and test the data flow end-to-end throughout the process.",
+    example: "Build a single REST endpoint, test its stability, then connect it to the corresponding UI component.",
   },
   {
     icon: Sparkles,
     step: "04",
     title: "Ship & Iterate",
-    text: "Deploy it, get it in front of someone, and refine based on what actually breaks.",
-    example: "Deploying early surfaced real bugs faster than testing locally ever did.",
+    text: "Deploy the application, gather user feedback, and refine the architecture based on real-world usage.",
+    example: "Deploying early and frequently surfaces potential bottlenecks faster than testing locally.",
   },
 ];
 
@@ -367,7 +367,7 @@ export default function PortfolioSite() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <SectionLabel>About Me</SectionLabel>
             <motion.h2 variants={fadeUp} className="text-3xl lg:text-4xl font-bold text-white mb-6">
-              Entry into engineering, building like it's already the job
+              Engineering scalable software solutions from the ground up
             </motion.h2>
             <motion.p variants={fadeUp} className="text-slate-400 text-lg leading-relaxed mb-4">
               I'm an Artificial Intelligence and Data Science graduate (B.E., 2026) from Government Engineering College, Bidar, with hands-on experience from a cloud-native Java microservices internship at Robomanthan Pvt. Ltd., where I helped build a full-stack rural homestay booking platform from scratch — schema, APIs, auth, and the React frontend that ties it all together.
@@ -617,7 +617,7 @@ export default function PortfolioSite() {
       {/* TOOLS STRIP & CTA */}
       <section className="relative z-10 pt-16 pb-24 px-6">
         <div className="max-w-6xl mx-auto text-center mb-20">
-          <SectionLabel center>Tools I Work With</SectionLabel>
+          <SectionLabel center>Skills & Technologies</SectionLabel>
           <div className="flex flex-wrap justify-center gap-3 mt-6">
             {TOOLS.map((t) => (
               <span key={t} className="rounded-full border border-white/10 bg-white/5 text-sm font-semibold text-slate-300 px-5 py-2.5">
@@ -630,9 +630,9 @@ export default function PortfolioSite() {
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-px">
             <div className="rounded-3xl bg-slate-950/80 backdrop-blur-md px-10 py-16 text-center">
-              <h2 className="text-white text-2xl md:text-3xl font-bold mb-4">Hiring a Full-Stack Developer?</h2>
+              <h2 className="text-white text-2xl md:text-3xl font-bold mb-4">Looking for a Dedicated Engineer?</h2>
               <p className="text-white/70 mb-8 max-w-lg mx-auto">
-                I bring hands-on experience from a Java microservices internship and several shipped full-stack projects — ready to contribute.
+                I combine strong academic foundations with hands-on experience in building scalable backend services and dynamic frontends. I am actively seeking a role where I can deliver immediate value and grow alongside a professional engineering team.
               </p>
               <a href="#contact" className="inline-block rounded-full bg-white text-slate-950 font-bold text-sm px-8 py-3.5 hover:bg-indigo-50 transition-colors">
                 Get In Touch
