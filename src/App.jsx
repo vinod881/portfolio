@@ -4,7 +4,8 @@ import {
   Mail, Phone, MapPin, Link as Linkedin, GitBranch as Github,
   Search, SlidersHorizontal, Code2, Sparkles, Layout as LayoutIcon,
   Cloud, ExternalLink, Send, Award, GraduationCap, Briefcase, Database,
-  Terminal, Brain, MapPinned, Languages, ChevronRight, ArrowUpRight, X
+  Terminal, Brain, MapPinned, Languages, ChevronRight, ArrowUpRight, X,
+  Smartphone, Cpu
 } from "lucide-react";
 
 // --- DATA ---
@@ -30,7 +31,7 @@ const SKILL_GROUPS = [
   {
     icon: Terminal,
     title: "Languages",
-    items: ["Java", "Python", "SQL", "JavaScript", "TypeScript"],
+    items: ["Java", "Python", "SQL", "JavaScript", "TypeScript", "Dart"],
   },
   {
     icon: LayoutIcon,
@@ -42,23 +43,28 @@ const SKILL_GROUPS = [
   },
   {
     icon: Code2,
-    title: "Frontend",
-    items: ["React.js", "HTML", "CSS", "Responsive UI", "Tailwind CSS"],
+    title: "Frontend & Mobile",
+    items: ["React.js", "Flutter", "Tailwind CSS", "HTML5/CSS3", "Responsive UI"],
   },
   {
     icon: Database,
     title: "Databases",
-    items: ["MySQL", "PostgreSQL", "MongoDB", "Supabase", "Redis"],
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Supabase", "SQLite", "Redis"],
+  },
+  {
+    icon: Brain,
+    title: "AI & GenAI",
+    items: ["LLMs (Llama 3.1)", "Gemini API", "RAG", "Prompt Engineering", "ChatGPT", "Cursor"],
+  },
+  {
+    icon: Cpu,
+    title: "CS Fundamentals & DSA",
+    items: ["Data Structures & Algorithms", "DBMS", "Operating Systems (OS)", "Computer Networks (TCP/IP)"],
   },
   {
     icon: Cloud,
     title: "Cloud & Tools",
-    items: ["AWS", "Docker", "Git & GitHub", "Swagger UI", "VS Code", "Eclipse"],
-  },
-  {
-    icon: Brain,
-    title: "AI / ML-adjacent",
-    items: ["RAG", "ChromaDB", "Sentence Transformers", "Groq LLM API"],
+    items: ["AWS", "Docker", "Git & GitHub", "Postman", "Swagger UI", "VS Code", "Eclipse IDE", "MySQL Workbench"],
   },
 ];
 
@@ -143,6 +149,21 @@ const EDUCATION = [
 ];
 
 const PROJECTS = [
+  {
+    title: "AI Study Planner",
+    tag: "Flutter · Dart · ML Kit · SQLite",
+    desc: "An intelligent study companion app with difficulty-weighted scheduling, Pomodoro focus timers, voice break guidance, and exam countdowns.",
+    longDesc: "An intelligent, end-to-end mobile study companion app built using Flutter and Dart. Designed to streamline academic preparation, it dynamically calculates study workloads using difficulty weighting, schedules custom Pomodoro sessions, and provides rich analytics for upcoming examinations.",
+    bullets: [
+      "Built dynamic, difficulty-weighted study scheduling algorithms and automated study sessions with SQLite local persistence.",
+      "Integrated Pomodoro focus timers featuring automated Text-to-Speech (TTS) voice announcements for structured study and break intervals.",
+      "Developed interactive study flashcards and real-time exam countdown countdown analytics to monitor student preparation milestones.",
+    ],
+    image: "/projects/ai_study_planner.png",
+    accent: "#06b6d4",
+    link: "https://github.com/vinod881/aistudyplanner",
+    linkLabel: "View Code",
+  },
   {
     title: "Grama-Vasathi - Rural Homestay Booking",
     tag: "Java · Spring Boot · React",
@@ -247,8 +268,9 @@ const SERVICES = [
 ];
 
 const TOOLS = [
-  "Java", "Spring Boot", "React", "TypeScript", "MySQL", 
-  "PostgreSQL", "MongoDB", "Docker", "AWS", "Git & GitHub",
+  "Java", "Python", "SQL", "Spring Boot", "React", "Flutter", 
+  "Dart", "TypeScript", "FastAPI", "PostgreSQL", "MySQL", "MongoDB", 
+  "Docker", "AWS", "Git & GitHub", "REST APIs", "RAG",
 ];
 
 // --- ANIMATION CONFIG ---
