@@ -8,6 +8,15 @@ export const NAV_LINKS = [
 
 export const PROJECTS = [
   {
+    title: "AI Study Planner",
+    tag: "Flutter · Dart · ML Kit · SQLite",
+    desc: "An intelligent study companion app featuring difficulty-weighted scheduling, Pomodoro timers, voice-guided breaks, flashcards, and exam analytics.",
+    image: "/projects/ai_study_planner.png",
+    accent: "#06b6d4",
+    link: "https://github.com/vinod881/aistudyplanner",
+    linkLabel: "View Code",
+  },
+  {
     title: "Medical AI Service",
     tag: "FastAPI · RAG · LLM",
     desc: "A RAG-powered medical assistant with chatbot, MCQ generator, and patient simulator endpoints.",
@@ -64,11 +73,13 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { category: "Languages", items: ["Java", "JavaScript", "TypeScript", "Python"] },
-  { category: "Backend", items: ["Spring Boot", "Spring Security", "FastAPI", "Node.js"] },
-  { category: "Frontend", items: ["React", "Tailwind CSS", "HTML/CSS"] },
-  { category: "Databases", items: ["MySQL", "PostgreSQL", "MongoDB", "Supabase"] },
-  { category: "Cloud & Tools", items: ["AWS", "Docker", "Git & GitHub", "Postman"] },
+  { category: "Languages", items: ["Java", "Python", "SQL", "JavaScript", "TypeScript", "Dart"] },
+  { category: "Backend", items: ["Spring Boot", "Spring Security", "REST APIs", "Microservices", "JWT Auth", "FastAPI", "OOP", "Node.js"] },
+  { category: "AI & GenAI", items: ["LLMs (Llama 3.1)", "Gemini API", "RAG", "Prompt Engineering", "ChatGPT", "Cursor"] },
+  { category: "Web & Mobile", items: ["React", "Flutter", "HTML/CSS", "Tailwind CSS", "Responsive Design"] },
+  { category: "Databases", items: ["PostgreSQL", "MySQL", "MongoDB", "Supabase", "SQLite"] },
+  { category: "CS Fundamentals & DSA", items: ["Data Structures & Algorithms", "DBMS", "Operating Systems", "Computer Networks (TCP/IP)"] },
+  { category: "Tools & Cloud", items: ["AWS", "Docker", "Git & GitHub", "Postman", "Swagger UI", "VS Code", "Eclipse IDE", "MySQL Workbench"] },
 ];
 
 export const CERTIFICATIONS = [
